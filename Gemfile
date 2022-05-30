@@ -24,6 +24,11 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+# Bootstrap
+gem "bootstrap", "~> 5.1.3"
+
+gem 'jquery-rails'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
@@ -47,6 +52,9 @@ gem "bootsnap", require: false
 
 # Mongoid
 gem 'mongoid', '~> 7.4'
+
+# Webpacker
+gem 'webpacker', '~> 5.4', '>= 5.4.3'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

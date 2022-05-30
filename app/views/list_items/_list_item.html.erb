@@ -1,0 +1,9 @@
+<head><%= stylesheet_link_tag "application", "data-turbo-track": "reload" %></head>
+<div id="<%= dom_id list_item %>">
+    <tr>
+      <td><%= list_item.name %></td>
+      <td><%= list_item.quantity %></td>
+      <td><%= button_to "Edit this list item", edit_list_list_item_path(@list, list_item), method: :get %></td>
+      <td><%= button_to "Delete this list item", list_list_item_path(@list, list_item), method: :delete, class:"deleteButton" %></td>
+    </tr>
+</div>

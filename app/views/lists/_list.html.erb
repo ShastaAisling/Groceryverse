@@ -1,0 +1,12 @@
+<div id="<%= dom_id list %>">
+  <tr>
+    <td><%= list.day %></td>
+    <td><%= list.paid %></td>
+    <td><%= list.cost %></td>
+    <td><%= list.comment %></td>
+    <td><%= button_to "Edit this list", edit_list_path(list), method: :get %></td>
+    <td><%= button_to "Delete this list", list_path(list), method: :delete, class:"deleteButton" %></td>
+    <td><%= button_to "See list items", list_list_items_path(list), method: :get %></td>
+  </tr>
+
+</div>
